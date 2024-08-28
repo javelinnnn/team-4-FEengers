@@ -15,12 +15,5 @@ This repository contains engineering materials of a self-driven vehicle's model 
 
 ## Introduction
 
-_This part must be filled by participants with the technical clarifications about the code: which modules the code consists of, how they are related to the electromechanical components of the vehicle, and what is the process to build/compile/upload the code to the vehicle’s controllers._
+The code consists of 4 main parts, one for the camera, one for the stepper motor, one for the gyro sensor and one for the main code. As for the camera, the code is uploaded onto the camera by saving an open script. The camera is wired to the ESP32, the TX pin of the camera is connected to the RX pin of the ESP32. This allows the camera to transmit data on the colour of traffic signs detected while the ESP32 receives this data. As for the module for the stepper motor and gyro sensor, it creates different functions that are used in the main part of the code.
 
-## How to prepare the repo based on the template
-
-_Remove this section before the first commit to the repository_
-
-1. Clone this repo by using the `git clone` functionality.
-2. Remove `.git` directory
-3. [Initialize a new public repository on GitHub](https://github.com/new) by following instructions from "create a new repository on the command line" section (appeared after pressing "Create repository" button).
